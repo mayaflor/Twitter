@@ -16,7 +16,7 @@ body {
   line-height: 1.71429;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN02_Su2dcwGvS-XaUc9MapbDu1AKly_Hy2yKkhEvYncyl9jtfYg")
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN02_Su2dcwGvS-XaUc9MapbDu1AKly_Hy2yKkhEvYncyl9jtfYg");
 }
   
 img {
@@ -44,13 +44,29 @@ img {
 }
 
 .white-box {
+  display: flex;
+  flex-direction: column;
   height: 200px;
-  width: 80%;
+  width: 651px;
   margin-top: 70px;
   background-color: white;
   border: solid 2px;
   border-color: white;
   border-radius: 20px;
 }
+
+.input-box {
+  height: 140px;
+  width: 650px;
+  border-radius: 20px;
+}
  
+.submit-button {
+  width: 100px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  background-color: #1da1f2;
+}
+
   /* font-family: 'Roboto', sans-serif; */
