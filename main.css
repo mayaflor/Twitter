@@ -72,4 +72,18 @@ img {
   background-color: #1da1f2;
 }
 
+.second-section {
+  display: flex;
+  justify-content: center
+}
+
+.tweet-box {
+  width: 650px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
   /* font-family: 'Roboto', sans-serif; */
