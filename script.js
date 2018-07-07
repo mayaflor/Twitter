@@ -1,6 +1,18 @@
 var submit = document.querySelector("input[type=submit]");
 var input = document.querySelector("textarea");
-var countdownNumbers = document.querySelector("span");
+var countdownNumbers = parseInt(document.querySelector("span"));
+
+function limite_textarea(valor) {
+  quant = 140;
+  total = valor.length;
+  if(total <= quant) {
+      resto = quant - total;
+      document.getElementById('cont').innerHTML = resto;
+  } else {
+      document.getElementById('texto').value = valor.substr(0,quant);
+  }
+}
+
 submit.onclick = function(event) {
   var tweetBox = document.getElementsByClassName("tweet-box") [0];
   var newBox = document.createElement("div");
@@ -10,25 +22,3 @@ submit.onclick = function(event) {
   event.preventDefault();
 }
 
-// input.value = "";
-
-// if ( document.querySelector("textarea").innerHTML.length === 0 ) {
-//   submit.disabled = true; 
-//   event.preventDefault();  
-// }
-
-// input.onkeyup = function countdown(maxCharacters) {
-//   var number = parseInt(document.querySelector("span"));
-//   console.log(number);
-// }
-
-// document.getElementsByClassName("input-box").setAttribute('maxlength',140);
-
-function countText(text, counter, max) {
-  if (text.value.length > max)
-    text.value = text.value.substring(0, max);
-  else
-    counter.value = max - text.value.length;
-}
-
-countText(input, countdownNumbers, 140);

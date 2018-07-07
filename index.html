@@ -13,10 +13,10 @@
     <div class="first-section">
       <div class="white-box">
         <form>
-          <textarea class="input-box" cols="90" placeholder="O que está acontecendo?" wrap="hard"></textarea>
-          <input class="submit-button" type="submit" value="Tweetar">
+          <textarea class="input-box" onkeyup="limite_textarea(this.value)" id="texto"></textarea>
+          <span id="cont">140</span>
+          <input class="submit-button" id="cont" type="submit" value="Tweetar">
         </form>
-        <span class="countdown">140</span>
       </div>
     </div>
     <div class="second-section">
