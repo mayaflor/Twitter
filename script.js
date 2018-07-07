@@ -1,15 +1,22 @@
 var submit = document.querySelector("input[type=submit]");
 var input = document.querySelector("textarea");
 var countdownNumbers = parseInt(document.querySelector("span"));
+var textContent = input.value;
+var bt = document.getElementById("submit-check");
+bt.disabled = true;
+
+function manage(txt) {
+  bt.disabled = false;
+}    
 
 function limite_textarea(valor) {
   quant = 140;
   total = valor.length;
   if(total <= quant) {
-      resto = quant - total;
-      document.getElementById('cont').innerHTML = resto;
+      rest = quant - total;
+      document.getElementById("count").innerHTML = rest;
   } else {
-      document.getElementById('texto').value = valor.substr(0,quant);
+      document.getElementById("text").value = valor.substr(0,quant);
   }
 }
 

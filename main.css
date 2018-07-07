@@ -46,7 +46,7 @@ img {
 .white-box {
   display: flex;
   flex-direction: column;
-  height: 170px;
+  height: 200px;
   width: 651px;
   margin-top: 70px;
   background-color: white;
@@ -85,5 +85,11 @@ img {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#count {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
 }
   /* font-family: 'Roboto', sans-serif; */
