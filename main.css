@@ -40,7 +40,6 @@ img {
 .first-section {
   display: flex;
   justify-content: center;
-  height: 300px;
 }
 
 .white-box {
