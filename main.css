@@ -46,7 +46,7 @@ img {
 .white-box {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 83px;
   width: 651px;
   margin-top: 70px;
   background-color: white;
@@ -57,7 +57,7 @@ img {
 
 .input-box {
   font-size: 24px;
-  height: 140px;
+  height: 37px;
   width: 650px;
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
