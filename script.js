@@ -1,6 +1,6 @@
 var submit = document.querySelector("input[type=submit]");
 var input = document.querySelector("textarea");
-var countdownNumbers = parseInt(document.querySelector("span"));
+var countdownNumbers = document.querySelector("span").innerHTML;
 var textContent = input.value;
 var bt = document.getElementById("submit-check"); 
 bt.disabled = true;
@@ -19,6 +19,15 @@ function limit_textarea(valor) {
   } else {
       document.getElementById("text").value = valor.substr(0,quant);
   } 
+  if (resto < 140 && resto > 19) {
+    document.getElementById('count').style.color = 'black';
+  }
+  if (resto < 20 && resto > 11) {
+    document.getElementById('count').style.color = 'blue';
+  }
+  if (resto < 10 ) {
+      document.getElementById('count').style.color = 'red';
+  }
 }
 
 submit.onclick = function(event) {
@@ -43,5 +52,16 @@ $(function() {
       $el.height(1);
       $el.height(this.scrollHeight - offset);
     }
-  });
+  })
 });
+
+// function change_color() {
+//   console.log(countdownNumbers)
+//   if (countdownNumbers < 20 && countdownNumbers > 11) {
+//       document.getElementById('count').style.color = 'blue';
+//   }
+//   if (countdownNumbers < 10 ) {
+//       document.getElementById('count').style.color = 'red';
+//   }
+// };
+
