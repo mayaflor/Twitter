@@ -24,6 +24,7 @@ function limit_textarea(valor) {
 submit.onclick = function(event) {
   var tweetBox = document.getElementsByClassName("tweet-box") [0];
   var newBox = document.createElement("div");
+  var linebreak = document.createElement('br');
   document.getElementById("count").innerHTML = 140;
   newBox.textContent = input.value;
   tweetBox.appendChild(newBox);
